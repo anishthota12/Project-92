@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Math Quiz</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="gamepage.css">
+
+    <script src="gamepage.js"></script>
+</head>
+
+<body onload="gamePageOnload()">
+        <h4 id="user1Name">
+        </h4>
+        <h4 id="user1Score">
+        </h4>
+        <br>
+        <br>
+        <h4 id="user2Name">
+        </h4>
+        <h4 id="user2Score">
+        </h4>
+        <center>
+        <h1>
+            Math Quiz
+        </h1>
+        <br>
+        <br>
+        <div id="questionAnswerDiv">
+            <h3>
+                Question Turn:
+            </h3>
+            <span id="questionTurnUser"></span>
+            <br>
+            <h3>
+                Answer Turn:
+            </h3>
+            <span id="answerTurnUser"></span>
+        </div>
+        <br>
+        <br>
+        <div id="output">
+        </div>
+        <br>
+        <div id="firstAndSecondNumberDiv">
+            <h5>
+                1st Number
+            </h5>
+            <input type="text" placeholder="1st Number..." class="form-control" id="firstNumber">
+            <br>
+            <br>
+            <h5>
+                2nd Number
+            </h5>
+            <input type="text" placeholder="2nd Number..." class="form-control" id="secondNumber">
+            <br>
+        </div>
+        <br>
+        <h5 id="errorMessage"></h5>
+        <br>
+        <span id="mathOperatorButtons">
+            <button id="additionButton" onclick="add()">
+                ➕
+            </button>
+            <button id="subtractionButton" onclick="subtract()">
+                ➖
+            </button>
+            <button id="multiplicationButton" onclick="multiply()">
+                ✖
+            </button>
+            <button id="divisionButton" onclick="divide()">
+                ➗
+            </button>
+        </span>
+        <br>
+        <br>
+        <button id="sendButton" onclick="send()">
+            Send
+        </button>
+    </center>
+</body>
+
+</html>
